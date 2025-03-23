@@ -1,7 +1,7 @@
 import { Shape } from "../../types/shapes";
 import { IShapes } from "@/shapes/shapes";
 
-class Rect implements IShapes {
+export class Rect implements IShapes {
   private corner1: Shape;
   private corner2: Shape;
 

@@ -1,7 +1,8 @@
 import { Shape } from "../../types/shapes";
 import { IShapes } from "@/shapes/shapes";
 
-class Path implements IShapes {
+export class Path implements IShapes {
+  //to store path of mouse
   private points: Shape[] = [];
 
   constructor(statingPoint: Shape) {
