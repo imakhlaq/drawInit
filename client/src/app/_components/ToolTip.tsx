@@ -1,3 +1,4 @@
+"use client";
 import { useContext } from "react";
 import { ShapeContext } from "@/store/shape/context";
 import { AvailableShapes } from "../../../types/shapes";
@@ -10,14 +11,13 @@ export default function ToolBox({}: Props) {
     <select
       id="toolBox"
       className="absolute top-[10px] left-4 bg-white  py-1 px-2"
-      onSelect={(e) => {
+      defaultValue="path"
+      onChange={(e) => {
         rcCtx.setShape(e.currentTarget.value as AvailableShapes);
       }}
     >
-      <option value="path" selected>
-        Path
-      </option>
-      <option value="rec">Rec</option>
+      <option value="path">Path</option>
+      <option value="rect">Rect</option>
     </select>
   );
 }
