@@ -1,6 +1,13 @@
 import Image from "next/image";
+import Canvas from "@/app/_components/canvas";
+import ToolBox from "@/app/_components/ToolTip";
 
 //font-[family-name:var(--font-geist-mono)]
 export default function Home() {
-  return <h1>HEllo</h1>;
+  return (
+    <section className="">
+      <ToolBox />
+      <Canvas />
+    </section>
+  );
 }
